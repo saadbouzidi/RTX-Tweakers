@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RTX Syndicate — Tweaker Web</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="logoTitle">
+        <img src="assets/logo.png" alt="Logo" class="logo" />
+        <div>
+          <h1 class="title">RTX Syndicate — Tweaker Web</h1>
+          <p class="subtitle">سجّل بحساب جوجل. أول مستخدم يصبح أدمن.</p>
+        </div>
+      </div>
+      <div class="auth">
+        <div id="gsi-button"></div>
+        <div id="user-info" style="display:none;"></div>
+      </div>
+    </header>
+
+    <main>
+      <div id="error" class="error" style="display:none;"></div>
+
+      <section class="cards" id="cards">
+        <!-- Cards will be injected by app.js -->
+      </section>
+
+      <section class="discord">
+        <h3>انضم إلى مجتمعنا على Discord</h3>
+        <a href="https://discord.gg/h6eFg9PzeF" target="_blank" rel="noreferrer" class="btn discordBtn">Join Discord</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© RTX Syndicate — Tweaker Web</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

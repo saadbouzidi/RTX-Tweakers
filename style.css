@@ -1,0 +1,22 @@
+body, html { margin:0; padding:0; height:100%; font-family: sans-serif; color:#e6eef8; direction: rtl; }
+.app { min-height:100vh; background: linear-gradient(-45deg, #0f0f0f, #1a1a2e, #3f0a63, #000000); background-size: 400% 400%; animation: gradientBG 15s ease infinite; padding:20px; display:flex; flex-direction:column; }
+@keyframes gradientBG { 0%{background-position:0% 50%;} 50%{background-position:100% 50%;} 100%{background-position:0% 50%;} }
+.header { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; }
+.logoTitle { display:flex; align-items:center; gap:12px; }
+.logo { height:64px; width:64px; border-radius:12px; }
+.title { margin:0; font-size:20px; }
+.subtitle { font-size:13px; color:#cbd5e1; }
+.auth { display:flex; align-items:center; }
+.user { display:flex; align-items:center; gap:8px; }
+.avatar { width:40px; height:40px; border-radius:999px; }
+.btn { padding:8px 14px; border:none; border-radius:8px; background:linear-gradient(90deg,#8b5cf6,#4c1d95); color:white; cursor:pointer; transition:transform 0.2s; }
+.btn:hover { transform:scale(1.05); }
+.btn.danger { background:linear-gradient(90deg,#ef4444,#b91c1c); }
+.cards { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-bottom:20px; }
+.card { background:rgba(0,0,0,0.4); padding:16px; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,0.6); transition:transform 0.3s; }
+.card:hover { transform: scale(1.05); }
+.card h3 { margin-top:0; }
+.discord { text-align:center; margin-top:20px; }
+.discordBtn { background:linear-gradient(90deg,#5865f2,#404eed); }
+.footer { margin-top:auto; text-align:center; font-size:12px; color:#a3a3a3; padding-top:20px; }
+.error { background:#7f1d1d; padding:8px; border-radius:8px; color:#ffecec; margin:10px 0; text-align:center; }
